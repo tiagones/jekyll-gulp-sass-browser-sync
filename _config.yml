@@ -1,4 +1,14 @@
-name: Your New Jekyll Site
+name: Tiagones
 markdown: redcarpet
-highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+highlighter: rouge # or rouge or null
+exclude: [
+  "assets/_src/",
+  "node_modules",
+  "*.bat",
+  "*.sublime-project",
+  "*.sublime-workspace",
+  "bower.json",
+  "gulpfile.js",
+  "package.json",
+  "README.md"
+]

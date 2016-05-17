@@ -1,0 +1,21 @@
+{
+  "name": "jekyll-gulp-sass-jade-browser-sync",
+  "version": "0.0.0",
+  "description": "A starter project including full setup for Jekyll, GulpJS, SASS, JADE. Original: https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
+  "homepage": "https://github.com/tiagones/jekyll-gulp-sass-browser-sync",
+  "main": "gulpfile.js",
+  "authors": [
+    "Tiago Dantas"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+
+  }
+}
