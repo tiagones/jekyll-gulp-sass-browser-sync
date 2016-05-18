@@ -35,6 +35,3 @@ _site
 .publish
 node_modules
 bower_components
-assets/css/
-assets/img/
-assets/js/
