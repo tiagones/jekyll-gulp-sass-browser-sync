@@ -61,7 +61,7 @@ gulp.task('sass', function () {
             includePaths: ['assets/_src/sass/'],
             //Config for Minify the outputed file
             //outputStyle: 'compressed',
-            onError: browserSync.notify
+            onError: browserSync.notify(messages.sassError)
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('_site/assets/css'))
