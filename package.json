@@ -1,13 +1,13 @@
 {
   "name": "jekyll-gulp-sass-jade-browser-sync",
-  "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS, JADE, Uglify (JS), Imagemin & BrowserSync. Modified for tiagones. Original: https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
+  "version": "1.0.0",
+  "description": "A starter project including full setup for Jekyll, GulpJS, PUGjs (Jade), SASS, Imagemin & BrowserSync. Modified by Tiagones, forked from Shane Osbourne (https://github.com/shakyShane/jekyll-gulp-sass-browser-sync)",
   "homepage": "https://github.com/tiagones/jekyll-gulp-sass-browser-sync",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shane Osbourne",
+  "author": "Tiago Dantas",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.24.6",

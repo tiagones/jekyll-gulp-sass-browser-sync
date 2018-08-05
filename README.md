@@ -1,9 +1,7 @@
 jekyll-gulp-sass-browser-sync
 =============================
 
-A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
-
-Here's a 1.5min [screencast](http://quick.as/pvrslgx) showing what you get.
+A starter project including full setup for Jekyll, GulpJS, PUGjs (Jade), SASS, Imagemin & BrowserSync. Modified by Tiagones, forked from Shane Osbourne (https://github.com/shakyShane/jekyll-gulp-sass-browser-sync).
 
 And here's a GIF showing the CSS injecting.
 
@@ -13,9 +11,18 @@ And here's a GIF showing the CSS injecting.
 
 To use this starter project, you'll need the following things installed on your machine.
 
-1. [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
-2. [NodeJS](http://nodejs.org) - use the installer.
-3. [GulpJS](https://github.com/gulpjs/gulp) - `$ npm install -g gulp` (mac users may need sudo)
+1. On Windows machines, recommended [Chocolatey](https://chocolatey.org/) - The package manager for Windows
+2. [Ruby](https://www.ruby-lang.org):
+   - Windows: `C:\> choco install ruby` via chocolatey or [RubyInstaller](https://rubyinstaller.org/).
+   - Linux: `$ sudo apt-get install ruby-full`
+   - MacOS: `$ brew install ruby`
+3. [Jekyll](http://jekyllrb.com/) - `gem install jekyll`
+4. [NodeJS](http://nodejs.org):
+   - Windows: `C:\> choco install nodejs.install`
+   - Linux: `$ sudo apt-get install nodejs`
+   - MacOS: `$ brew install node`
+5. [GulpJS](https://github.com/gulpjs/gulp) - `npm install -g gulp`
+6. [BrowserSync](https://browsersync.io/) - `npm install -g browser-sync`
 
 ## Local Installation
 
@@ -40,8 +47,6 @@ As this is just a Jekyll project, you can use any of the commands listed in thei
 
 You can easily deploy your site build to a gh-pages branch. First, follow the instructions at [gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages) to get your branch prepared for the deployment and to install the module. Then, in `gulpfile.js` you'll want to include something like the code below. `gulp.src()` needs to be the path to your final site folder, which by default will be `_site`. If you change the `destination` in your `_config.yml` file, be sure to reflect that in your gulpfile.
 
-
-
 ```javascript
 var deploy = require("gulp-gh-pages");
 
@@ -50,3 +55,14 @@ gulp.task("deploy", ["jekyll-build"], function () {
         .pipe(deploy());
 });
 ```
+
+## TODO
+
+**Upgrades**
+- [ ] Upgrade from JADE to PUGjs (Gulp)
+- [ ] Add Sourcemaps for CSS and JS files
+- [ ] Check best configuration for autoprefixer for 2018 browsers
+
+**Improvments**
+- [ ] Study the possibility of using 'gulp-hash' to improve assets cache control.
+- [ ] Add support for Bower or Yarn (recommended).

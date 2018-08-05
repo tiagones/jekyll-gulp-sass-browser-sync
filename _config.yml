@@ -1,6 +1,6 @@
 name: Tiagones
-markdown: redcarpet
-highlighter: rouge # or rouge or null
+markdown: kramdown
+#highlighter: rouge # or rouge or null
 exclude: [
   "assets/_src/",
   "node_modules",
